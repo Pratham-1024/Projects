@@ -11,3 +11,109 @@ html, body{
     width: 100%;
 }
 
+#nav{
+    height: 130px;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 0 120px;
+    position: fixed;
+    z-index: 999;
+    
+}
+
+#nav img{
+    height: 80px;
+} 
+
+#nav h4{
+    text-transform: uppercase;
+}
+
+#cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    transition: all linear 0.1s;
+  }
+  #cursor-blur {
+    height: 300px;
+    width: 300px;
+    background-color: rgba(150, 193, 30, 0.61);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(60px);
+    z-index: 9;
+    transition: all linear 0.4s;
+  }
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.377);
+ 
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    z-index: 10;
+
+}
+
+#page1 h1{
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+
+}
+
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: #000;
+    top: -5px;
+    left: -5px;
+    -webkit-text-stroke: 1.5px #95c11e;
+    z-index: -1;
+}
+
+#page1 h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom:20px ;
+    
+}
+
+#page1 p{
+    font-size: 35px;
+    font-weight: 400;
+    
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
